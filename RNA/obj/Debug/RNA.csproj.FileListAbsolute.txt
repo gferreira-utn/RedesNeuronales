@@ -1,0 +1,15 @@
+C:\Users\gferreira\Desktop\RNA\RNA\bin\Debug\RNA.dll
+C:\Users\gferreira\Desktop\RNA\RNA\bin\Debug\RNA.pdb
+C:\Users\gferreira\Desktop\RNA\RNA\obj\Debug\RNA.csprojResolveAssemblyReference.cache
+C:\Users\gferreira\Desktop\RNA\RNA\obj\Debug\RNA.dll
+C:\Users\gferreira\Desktop\RNA\RNA\obj\Debug\RNA.pdb
+C:\Users\gferreira\Downloads\RNA-2016-04-25\RNA\RNA\bin\Debug\RNA.dll
+C:\Users\gferreira\Downloads\RNA-2016-04-25\RNA\RNA\bin\Debug\RNA.pdb
+C:\Users\gferreira\Downloads\RNA-2016-04-25\RNA\RNA\obj\Debug\RNA.csprojResolveAssemblyReference.cache
+C:\Users\gferreira\Downloads\RNA-2016-04-25\RNA\RNA\obj\Debug\RNA.dll
+C:\Users\gferreira\Downloads\RNA-2016-04-25\RNA\RNA\obj\Debug\RNA.pdb
+C:\Users\gferreira\Downloads\RNA\RNA\obj\Debug\RNA.csprojResolveAssemblyReference.cache
+C:\Users\gferreira\Downloads\RNA\RNA\obj\Debug\RNA.dll
+C:\Users\gferreira\Downloads\RNA\RNA\obj\Debug\RNA.pdb
+C:\Users\gferreira\Downloads\RNA\RNA\bin\Debug\RNA.dll
+C:\Users\gferreira\Downloads\RNA\RNA\bin\Debug\RNA.pdb

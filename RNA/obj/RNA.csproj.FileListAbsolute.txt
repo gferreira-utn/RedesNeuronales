@@ -1,0 +1,5 @@
+C:\Users\gferreira\Desktop\RNA\RNA\bin\Debug\RNA.dll
+C:\Users\gferreira\Desktop\RNA\RNA\bin\Debug\RNA.pdb
+C:\Users\gferreira\Desktop\RNA\RNA\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\gferreira\Desktop\RNA\RNA\obj\Debug\RNA.dll
+C:\Users\gferreira\Desktop\RNA\RNA\obj\Debug\RNA.pdb

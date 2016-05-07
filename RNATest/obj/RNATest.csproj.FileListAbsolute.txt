@@ -1,0 +1,10 @@
+C:\Users\gferreira\Desktop\RNA\RNATest\bin\Debug\RNATest.exe
+C:\Users\gferreira\Desktop\RNA\RNATest\bin\Debug\RNATest.pdb
+C:\Users\gferreira\Desktop\RNA\RNATest\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\gferreira\Desktop\RNA\RNATest\obj\Debug\RNATest.Properties.Resources.resources
+C:\Users\gferreira\Desktop\RNA\RNATest\obj\Debug\RNATest.csproj.GenerateResource.Cache
+C:\Users\gferreira\Desktop\RNA\RNATest\obj\Debug\RNATest.exe
+C:\Users\gferreira\Desktop\RNA\RNATest\obj\Debug\RNATest.pdb
+C:\Users\gferreira\Desktop\RNA\RNATest\bin\Debug\RNA.dll
+C:\Users\gferreira\Desktop\RNA\RNATest\bin\Debug\RNA.pdb
+C:\Users\gferreira\Desktop\RNA\RNATest\obj\Debug\RNATest.frmRNA.resources
