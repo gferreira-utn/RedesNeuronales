@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             this.btnAprender = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtCantEntrada = new System.Windows.Forms.TextBox();
@@ -46,6 +48,11 @@
             this.label8 = new System.Windows.Forms.Label();
             this.lstErroresRed = new System.Windows.Forms.ListBox();
             this.btnInicializar = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtFactorEntrenamiento = new System.Windows.Forms.TextBox();
+            this.btnEntradas = new System.Windows.Forms.Button();
+            this.chtErrores = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            ((System.ComponentModel.ISupportInitialize)(this.chtErrores)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAprender
@@ -117,7 +124,7 @@
             // 
             // txtEntrada1
             // 
-            this.txtEntrada1.Location = new System.Drawing.Point(188, 62);
+            this.txtEntrada1.Location = new System.Drawing.Point(167, 41);
             this.txtEntrada1.Name = "txtEntrada1";
             this.txtEntrada1.Size = new System.Drawing.Size(79, 20);
             this.txtEntrada1.TabIndex = 9;
@@ -125,7 +132,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(185, 42);
+            this.label5.Location = new System.Drawing.Point(164, 21);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(82, 13);
             this.label5.TabIndex = 10;
@@ -133,7 +140,7 @@
             // 
             // txtEntrada2
             // 
-            this.txtEntrada2.Location = new System.Drawing.Point(188, 89);
+            this.txtEntrada2.Location = new System.Drawing.Point(167, 68);
             this.txtEntrada2.Name = "txtEntrada2";
             this.txtEntrada2.Size = new System.Drawing.Size(79, 20);
             this.txtEntrada2.TabIndex = 11;
@@ -141,7 +148,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(289, 42);
+            this.label6.Location = new System.Drawing.Point(258, 22);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(75, 13);
             this.label6.TabIndex = 12;
@@ -149,7 +156,7 @@
             // 
             // txtSalida
             // 
-            this.txtSalida.Location = new System.Drawing.Point(292, 62);
+            this.txtSalida.Location = new System.Drawing.Point(261, 42);
             this.txtSalida.Name = "txtSalida";
             this.txtSalida.Size = new System.Drawing.Size(73, 20);
             this.txtSalida.TabIndex = 13;
@@ -198,11 +205,51 @@
             this.btnInicializar.UseVisualStyleBackColor = true;
             this.btnInicializar.Click += new System.EventHandler(this.btnInicializar_Click);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(258, 68);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(107, 13);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "Factor entrenamiento";
+            // 
+            // txtFactorEntrenamiento
+            // 
+            this.txtFactorEntrenamiento.Location = new System.Drawing.Point(261, 84);
+            this.txtFactorEntrenamiento.Name = "txtFactorEntrenamiento";
+            this.txtFactorEntrenamiento.Size = new System.Drawing.Size(73, 20);
+            this.txtFactorEntrenamiento.TabIndex = 20;
+            // 
+            // btnEntradas
+            // 
+            this.btnEntradas.Location = new System.Drawing.Point(167, 94);
+            this.btnEntradas.Name = "btnEntradas";
+            this.btnEntradas.Size = new System.Drawing.Size(79, 47);
+            this.btnEntradas.TabIndex = 21;
+            this.btnEntradas.Text = "Colocar Entradas";
+            this.btnEntradas.UseVisualStyleBackColor = true;
+            // 
+            // chtErrores
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chtErrores.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chtErrores.Legends.Add(legend1);
+            this.chtErrores.Location = new System.Drawing.Point(399, 8);
+            this.chtErrores.Name = "chtErrores";
+            this.chtErrores.Size = new System.Drawing.Size(591, 302);
+            this.chtErrores.TabIndex = 22;
+            // 
             // frmTestBackPropagation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(403, 320);
+            this.ClientSize = new System.Drawing.Size(1002, 320);
+            this.Controls.Add(this.chtErrores);
+            this.Controls.Add(this.btnEntradas);
+            this.Controls.Add(this.txtFactorEntrenamiento);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.btnInicializar);
             this.Controls.Add(this.lstErroresRed);
             this.Controls.Add(this.label8);
@@ -223,6 +270,7 @@
             this.Controls.Add(this.btnAprender);
             this.Name = "frmTestBackPropagation";
             this.Text = "frmTestBackPropagation";
+            ((System.ComponentModel.ISupportInitialize)(this.chtErrores)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -248,5 +296,9 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ListBox lstErroresRed;
         private System.Windows.Forms.Button btnInicializar;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtFactorEntrenamiento;
+        private System.Windows.Forms.Button btnEntradas;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chtErrores;
     }
 }

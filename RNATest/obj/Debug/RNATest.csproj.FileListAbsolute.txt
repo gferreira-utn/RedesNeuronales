@@ -29,3 +29,15 @@ C:\Users\gferreira\Downloads\RNA\RNATest\bin\Debug\RNATest.pdb
 C:\Users\gferreira\Downloads\RNA\RNATest\bin\Debug\RNA.dll
 C:\Users\gferreira\Downloads\RNA\RNATest\bin\Debug\RNA.pdb
 C:\Users\gferreira\Downloads\RNA\RNATest\obj\Debug\RNATest.frmRedHopfield.resources
+G:\RNA\RNATest\obj\Debug\RNATest.exe
+G:\RNA\RNATest\obj\Debug\RNATest.pdb
+G:\RNA\RNATest\bin\Debug\RNATest.exe
+G:\RNA\RNATest\bin\Debug\RNATest.pdb
+G:\RNA\RNATest\bin\Debug\RNA.dll
+G:\RNA\RNATest\bin\Debug\RNA.pdb
+G:\RNA\RNATest\obj\Debug\RNATest.csprojResolveAssemblyReference.cache
+G:\RNA\RNATest\obj\Debug\RNATest.frmTestBackPropagation.resources
+G:\RNA\RNATest\obj\Debug\RNATest.frmRedHopfield.resources
+G:\RNA\RNATest\obj\Debug\RNATest.Properties.Resources.resources
+G:\RNA\RNATest\obj\Debug\RNATest.csproj.GenerateResource.Cache
+G:\RNA\RNATest\bin\Debug\RNATest.exe.config
