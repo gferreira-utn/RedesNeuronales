@@ -41,8 +41,8 @@ namespace RNA.RedBackPropagation
             salida.InicializaCapa();
 
             // Inicializo los pesos.
-            oculta.InicializaPesos(0.01);
-            salida.InicializaPesos(0.1);
+            oculta.InicializaPesos(0.1);
+            salida.InicializaPesos(0.2);
         }
 
         /// <summary>
@@ -76,7 +76,7 @@ namespace RNA.RedBackPropagation
         /// <param name="valor">Valor de salida deseado</param>
         public void ColocarSalidaDeseada(int neurona, double valor)
         {
-            if (neurona > 0 && neurona < this.salida.Neuronas)
+            if (neurona >= 0 && neurona < this.salida.Neuronas)
                 this.salida.ValorDeseado[neurona] = valor;
         }
 
