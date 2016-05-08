@@ -27,7 +27,7 @@ namespace RNATest
 
             while (double.Parse(txtSalida.Text) != salida)
             {
-                redBP.FeedFordward();
+                redBP.FeedForward();
                 salida = redBP.ObtenerSalida(0);
 
                 lstSalidas.Items.Add(salida);
@@ -45,9 +45,13 @@ namespace RNATest
         private void btnInicializar_Click(object sender, EventArgs e)
         {
             redBP.Inicializa(int.Parse(txtCantEntrada.Text), int.Parse(txtCantOculta.Text), int.Parse(txtCantSalida.Text), double.Parse(txtFactorEntrenamiento.Text));
+            redBP.ColocarSalidaDeseada(0, double.Parse(this.txtSalida.Text));    
+        }
+
+        private void btnEntradas_Click(object sender, EventArgs e)
+        {
             redBP.ColocarEntrada(0, double.Parse(txtEntrada1.Text));
             redBP.ColocarEntrada(1, double.Parse(txtEntrada2.Text));
-            redBP.ColocarSalidaDeseada(0, double.Parse(this.txtSalida.Text));    
         }
     }
 }

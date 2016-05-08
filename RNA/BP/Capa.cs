@@ -76,8 +76,6 @@ namespace RNA.RedBackPropagation
                 this.Pesos = new double[this.neuronas, this.neuronasPadre];
                 this.cambioPesos = new double[this.neuronas, this.neuronasPadre];
             }
-            else
-                this.Pesos = new double[this.neuronas, 1];
 
             this.Valor = new double[this.neuronas];
             this.ValorDeseado = new double[this.neuronas];
@@ -140,16 +138,6 @@ namespace RNA.RedBackPropagation
                         }
                     }
                 }
-                else
-                {
-                    // Inicializo los pesos con valores aleatorios
-                    Random r = new Random();
-
-                    for (int n = 0; n < this.neuronas; n++)
-                    {
-                        this.Pesos[n, 0] = r.NextDouble() - r.NextDouble();
-                    }
-                }
             }
             else
             {
@@ -161,13 +149,6 @@ namespace RNA.RedBackPropagation
                         {
                             this.Pesos[n, m] = (double)pesos;
                         }
-                    }
-                }
-                else
-                {
-                    for (int n = 0; n < this.neuronas; n++)
-                    {
-                        this.Pesos[n, 0] = (double)pesos;
                     }
                 }
             }
@@ -188,18 +169,6 @@ namespace RNA.RedBackPropagation
                         valor += this.padre.Valor[m] * this.Pesos[n, m];
 
                     valor = valor - bias[n];
-
-                    // Calculo el valor con la función de activación
-                    this.Valor[n] = 1.0 / (1 + Math.Exp(-valor));
-                }
-            }
-            else
-            {
-                for (int n = 0; n < this.neuronas; n++)
-                {
-                    valor = 0.0;
-
-                    valor = this.Valor[n] * this.Pesos[n, 0] - this.bias[n];
 
                     // Calculo el valor con la función de activación
                     this.Valor[n] = 1.0 / (1 + Math.Exp(-valor));

@@ -31,3 +31,14 @@ C:\Users\gferreira\Downloads\RNA\GeometricRecognizer\obj\Debug\GeometricRecogniz
 C:\Users\gferreira\Downloads\RNA\GeometricRecognizer\obj\Debug\GeometricRecognizer.csproj.GenerateResource.Cache
 C:\Users\gferreira\Downloads\RNA\GeometricRecognizer\obj\Debug\GeometricRecognizer.exe
 C:\Users\gferreira\Downloads\RNA\GeometricRecognizer\obj\Debug\GeometricRecognizer.pdb
+G:\RNA\GeometricRecognizer\bin\Debug\GeometricRecognizer.exe.config
+G:\RNA\GeometricRecognizer\bin\Debug\GeometricRecognizer.exe
+G:\RNA\GeometricRecognizer\bin\Debug\GeometricRecognizer.pdb
+G:\RNA\GeometricRecognizer\bin\Debug\RNA.dll
+G:\RNA\GeometricRecognizer\bin\Debug\RNA.pdb
+G:\RNA\GeometricRecognizer\obj\Debug\GeometricRecognizer.csprojResolveAssemblyReference.cache
+G:\RNA\GeometricRecognizer\obj\Debug\GeometricRecognizer.frmGeometricRecognizer.resources
+G:\RNA\GeometricRecognizer\obj\Debug\GeometricRecognizer.Properties.Resources.resources
+G:\RNA\GeometricRecognizer\obj\Debug\GeometricRecognizer.csproj.GenerateResource.Cache
+G:\RNA\GeometricRecognizer\obj\Debug\GeometricRecognizer.exe
+G:\RNA\GeometricRecognizer\obj\Debug\GeometricRecognizer.pdb

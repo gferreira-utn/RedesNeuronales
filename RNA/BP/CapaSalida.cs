@@ -10,8 +10,8 @@ namespace RNA.RedBackPropagation
         {
             for (int n = 0; n < this.neuronas; n++)
             {
-                //this.Error[n] = (this.ValorDeseado[n] - this.Valor[n]) * this.Valor[n] * (1.0 - this.Valor[n]);
-                this.Error[n] = (this.ValorDeseado[n] - (this.Valor[n] > 0.5 ? 1 : 0)) * this.Valor[n] * (1.0 - this.Valor[n]);
+                this.Error[n] = (this.ValorDeseado[n] - this.Valor[n]) * this.Valor[n] * (1.0 - this.Valor[n]);
+                //this.Error[n] = (this.ValorDeseado[n] - (this.Valor[n] > 0.5 ? 1 : 0)) * this.Valor[n] * (1.0 - this.Valor[n]);
             }
         }
     }

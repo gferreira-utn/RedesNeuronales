@@ -13,3 +13,8 @@ C:\Users\gferreira\Downloads\RNA\RNA\obj\Debug\RNA.dll
 C:\Users\gferreira\Downloads\RNA\RNA\obj\Debug\RNA.pdb
 C:\Users\gferreira\Downloads\RNA\RNA\bin\Debug\RNA.dll
 C:\Users\gferreira\Downloads\RNA\RNA\bin\Debug\RNA.pdb
+G:\RNA\RNA\bin\Debug\RNA.dll
+G:\RNA\RNA\bin\Debug\RNA.pdb
+G:\RNA\RNA\obj\Debug\RNA.csprojResolveAssemblyReference.cache
+G:\RNA\RNA\obj\Debug\RNA.dll
+G:\RNA\RNA\obj\Debug\RNA.pdb

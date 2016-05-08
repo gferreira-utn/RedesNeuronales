@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             this.btnAprender = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtCantEntrada = new System.Windows.Forms.TextBox();
@@ -229,13 +229,14 @@
             this.btnEntradas.TabIndex = 21;
             this.btnEntradas.Text = "Colocar Entradas";
             this.btnEntradas.UseVisualStyleBackColor = true;
+            this.btnEntradas.Click += new System.EventHandler(this.btnEntradas_Click);
             // 
             // chtErrores
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chtErrores.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chtErrores.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            this.chtErrores.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chtErrores.Legends.Add(legend2);
             this.chtErrores.Location = new System.Drawing.Point(399, 8);
             this.chtErrores.Name = "chtErrores";
             this.chtErrores.Size = new System.Drawing.Size(591, 302);

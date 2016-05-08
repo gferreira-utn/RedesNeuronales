@@ -14,22 +14,20 @@ namespace RNA.RedBackPropagation
             // Por ahora solo puedo crear una capa de entrada, una oculta y una de salida.
             entrada = new CapaEntrada();
             entrada.Neuronas = entradas;
-            //entrada.NeuronasHija = ocultas;
-            entrada.CoeficienteEntrenamiento = coeficiente;
-            entrada.Bias = new double[] { 0.5, 0.5};
 
             oculta = new CapaOculta();
             oculta.Neuronas = ocultas;
-            //oculta.NeuronasHija = entradas;
-            //oculta.NeuronasPadre = salidas;
             oculta.CoeficienteEntrenamiento = coeficiente;
-            oculta.Bias = new double[] { 1, 1, 1 };
+            oculta.Bias = new double[ocultas];
+            for (int i = 0; i < ocultas; i++)
+                oculta.Bias[i] = 1;
 
             salida = new CapaSalida();
             salida.Neuronas = salidas;
-            //salida.NeuronasPadre = ocultas;
             salida.CoeficienteEntrenamiento = coeficiente;
-            salida.Bias = new double[] { 0.5};
+            salida.Bias = new double[salidas];
+            for (int i = 0; i < salidas; i++)
+                salida.Bias[i] = 1;
 
             // Configuro las relaciones.
             entrada.ColocaHija(oculta);
@@ -43,9 +41,8 @@ namespace RNA.RedBackPropagation
             salida.InicializaCapa();
 
             // Inicializo los pesos.
-            entrada.InicializaPesos(0.5);
-            oculta.InicializaPesos(0.33);
-            salida.InicializaPesos(1);
+            oculta.InicializaPesos(0.01);
+            salida.InicializaPesos(0.1);
         }
 
         /// <summary>
@@ -86,7 +83,7 @@ namespace RNA.RedBackPropagation
         /// <summary>
         /// Realiza el cálculo de todos los valores de la red neuronal.
         /// </summary>
-        public void FeedFordward()
+        public void FeedForward()
         {
             this.entrada.CalcularNeuronas();
             this.oculta.CalcularNeuronas();
