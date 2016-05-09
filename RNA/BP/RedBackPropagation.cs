@@ -19,15 +19,11 @@ namespace RNA.RedBackPropagation
             oculta.Neuronas = ocultas;
             oculta.CoeficienteEntrenamiento = coeficiente;
             oculta.Bias = new double[ocultas];
-            for (int i = 0; i < ocultas; i++)
-                oculta.Bias[i] = 1;
 
             salida = new CapaSalida();
             salida.Neuronas = salidas;
             salida.CoeficienteEntrenamiento = coeficiente;
             salida.Bias = new double[salidas];
-            for (int i = 0; i < salidas; i++)
-                salida.Bias[i] = 1;
 
             // Configuro las relaciones.
             entrada.ColocaHija(oculta);
@@ -41,8 +37,8 @@ namespace RNA.RedBackPropagation
             salida.InicializaCapa();
 
             // Inicializo los pesos.
-            oculta.InicializaPesos(0.1);
-            salida.InicializaPesos(0.2);
+            oculta.InicializaPesos();
+            salida.InicializaPesos();
         }
 
         /// <summary>
@@ -64,7 +60,7 @@ namespace RNA.RedBackPropagation
         public double ObtenerSalida(int neurona)
         {
             if (neurona >= 0 && neurona < this.salida.Neuronas)
-                return this.salida.Valor[neurona] > 0.5 ? 1:0;
+                return this.salida.Valor[neurona] > 0.5 ? 1 : 0;
             else
                 return 0.0;
         }
@@ -103,29 +99,6 @@ namespace RNA.RedBackPropagation
         }
 
         /// <summary>
-        /// Permite identificar el indice de la neurona de salida que tenga el valor más alto.
-        /// </summary>
-        /// <returns></returns>
-        public int IdValorMax()
-        {
-            double maximo = 0.0;
-            int indice = 0;
-
-            maximo = this.salida.Valor[0];
-
-            for(int n = 0; n < this.salida.Neuronas; n++)
-            {
-                if(this.salida.Valor[n]>maximo)
-                {
-                    maximo = this.salida.Valor[n];
-                    indice = n;
-                }
-            }
-
-            return indice;
-        }
-
-        /// <summary>
         /// Permite calcular el error total de la red.
         /// </summary>
         /// <returns></returns>
@@ -135,7 +108,7 @@ namespace RNA.RedBackPropagation
 
             for(int n = 0; n < this.salida.Neuronas; n++)
             {
-                error += (this.salida.Valor[n] - this.salida.ValorDeseado[n]) * (this.salida.Valor[n] - this.salida.ValorDeseado[n]);
+                error += Math.Pow(this.salida.Valor[n] - this.salida.ValorDeseado[n], 2);
             }
 
             error /= this.salida.Neuronas;

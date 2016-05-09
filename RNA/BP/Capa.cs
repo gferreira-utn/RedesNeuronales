@@ -88,7 +88,7 @@ namespace RNA.RedBackPropagation
                 {
                     for (int m = 0; m < this.neuronasPadre; m++)
                     {
-                        Pesos[n, m] = 1.0;
+                        Pesos[n, m] = 0.0;
                         cambioPesos[n, m] = 0.0;
                     }
                 }
@@ -121,35 +121,20 @@ namespace RNA.RedBackPropagation
         /// <summary>
         /// Inicializo los pesos con valores aleatorios.
         /// </summary>
-        public void InicializaPesos(double? pesos)
+        public void InicializaPesos()
         {
-            if(pesos == null)
+            if(this.tienePadre)
             { 
-                if(this.tienePadre)
-                { 
-                    // Inicializo los pesos con valores aleatorios
-                    Random r = new Random();
+                // Inicializo los pesos con valores aleatorios
+                Random r = new Random();
 
-                    for (int n = 0; n < this.neuronas; n++)
-                    {
-                        for (int m = 0; m < this.neuronasPadre; m++)
-                        {
-                            this.Pesos[n, m] = r.NextDouble() - r.NextDouble();
-                        }
-                    }
-                }
-            }
-            else
-            {
-                if(this.tienePadre)
+                for (int n = 0; n < this.neuronas; n++)
                 {
-                    for (int n = 0; n < this.neuronas; n++)
+                    for (int m = 0; m < this.neuronasPadre; m++)
                     {
-                        for (int m = 0; m < this.neuronasPadre; m++)
-                        {
-                            this.Pesos[n, m] = (double)pesos;
-                        }
+                        this.Pesos[n, m] = r.NextDouble() - r.NextDouble();
                     }
+                    this.bias[n] = r.NextDouble() - r.NextDouble();
                 }
             }
         }
@@ -168,7 +153,7 @@ namespace RNA.RedBackPropagation
                     for (int m = 0; m < this.neuronasPadre; m++)
                         valor += this.padre.Valor[m] * this.Pesos[n, m];
 
-                    valor = valor - bias[n];
+                    valor = valor + bias[n];
 
                     // Calculo el valor con la función de activación
                     this.Valor[n] = 1.0 / (1 + Math.Exp(-valor));
@@ -189,6 +174,7 @@ namespace RNA.RedBackPropagation
                     delta = this.coeficienteEntrenamiento * this.Error[n] * this.padre.Valor[m];
                     this.cambioPesos[n, m] = delta;
                     this.Pesos[n, m] += delta;
+                    this.bias[n] += this.Error[n];
                 }
             }
         }
